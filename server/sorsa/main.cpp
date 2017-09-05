@@ -29,10 +29,6 @@ void relay_message (Client *from, std::string message);
 
 const char *server_message; // viesti clientille, muutetaan myöhemmin   
 
-/*
-    cpp chatti socket serveri
-*/
-
 int main () {
     // servun socket osoite config
     struct sockaddr_in server;
