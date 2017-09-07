@@ -29,7 +29,7 @@ int main()
 	std::cout << "Socket created\n\n";
     
     std::string ip_in;
-    std::cout << "Anna Serverin IP osoite (ex. localhost): ";
+    std::cout << "Anna Serverin IP osoite (ex. \nlocal: 127.0.0.1, \nec2: 35.158.184.105): ";
     std::cin >> ip_in;
 
 	server.sin_addr.s_addr = inet_addr(ip_in.c_str());
@@ -64,7 +64,6 @@ int main()
 
 	while(1)
 	{	
-		
 		char bf[2000];
 		std::cin.getline(bf, sizeof(bf));
 		std::string mg(bf);
@@ -89,7 +88,7 @@ void *rec_thread (void *sock) {
 		//Receive a reply from the server
 		if( recv(s , server_reply , 2000 , 0) < 0)
 		{
-			puts("recv failed");
+			std::cout << "receive epäonnistui...\n";
 			break;
 		}
 		
