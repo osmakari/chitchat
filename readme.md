@@ -1,3 +1,6 @@
-*SHITTYchat*
-**Avaa server/buildit/chatti_serveri, se avaa tämänhetkiseen IP osoitteeseen socketin (port: 1337)**
+Chitchat
 
+**Howto**
+    1. buildaa serveri (build.sh)
+    2. käynnistä buildit/chitchat_server
+    3. yhdistä laitteen IP osoitteeseen

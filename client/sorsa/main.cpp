@@ -18,7 +18,7 @@ int main()
 	struct sockaddr_in server;
 	const char *message;
 	std::cout << "**********************\n";
-	std::cout << "Welcome to ShittyChat!\n";
+	std::cout << "Welcome to ChitChat!\n";
 	std::cout << "**********************\n";
 	//Create socket
 	sock = socket(AF_INET , SOCK_STREAM , 0);
